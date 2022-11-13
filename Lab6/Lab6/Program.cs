@@ -140,7 +140,7 @@ namespace Lab6
         }
     }
 
-    public class Workshop
+    /*public class Workshop
     {
         static private int enumWorkCount = Enum.GetNames(typeof(Work)).Length;
         public Work[] NumberOfWork = new Work[enumWorkCount];
@@ -151,7 +151,7 @@ namespace Lab6
                 this.NumberOfWork[i] = (Work)numberOfWork[i];                
             }
         }
-    }
+    }*/
 
     public enum Work
     {
