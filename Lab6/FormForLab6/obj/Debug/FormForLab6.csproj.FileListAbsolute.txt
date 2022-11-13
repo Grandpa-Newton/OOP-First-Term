@@ -1,0 +1,15 @@
+C:\c#\Lab6\FormForLab6\bin\Debug\FormForLab6.exe.config
+C:\c#\Lab6\FormForLab6\bin\Debug\FormForLab6.exe
+C:\c#\Lab6\FormForLab6\bin\Debug\FormForLab6.pdb
+C:\c#\Lab6\FormForLab6\bin\Debug\Lab6.exe
+C:\c#\Lab6\FormForLab6\bin\Debug\Lab6.pdb
+C:\c#\Lab6\FormForLab6\bin\Debug\Lab6.exe.config
+C:\c#\Lab6\FormForLab6\obj\Debug\FormForLab6.csproj.AssemblyReference.cache
+C:\c#\Lab6\FormForLab6\obj\Debug\FormForLab6.csproj.SuggestedBindingRedirects.cache
+C:\c#\Lab6\FormForLab6\obj\Debug\FormForLab6.Form1.resources
+C:\c#\Lab6\FormForLab6\obj\Debug\FormForLab6.Properties.Resources.resources
+C:\c#\Lab6\FormForLab6\obj\Debug\FormForLab6.csproj.GenerateResource.cache
+C:\c#\Lab6\FormForLab6\obj\Debug\FormForLab6.csproj.CoreCompileInputs.cache
+C:\c#\Lab6\FormForLab6\obj\Debug\FormForLab6.csproj.CopyComplete
+C:\c#\Lab6\FormForLab6\obj\Debug\FormForLab6.exe
+C:\c#\Lab6\FormForLab6\obj\Debug\FormForLab6.pdb

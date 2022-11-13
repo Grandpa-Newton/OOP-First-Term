@@ -26,7 +26,7 @@ namespace Lab6
                 }
                 workByDays[i]=new Workshop(tempArray);
             }
-            double sum = 0, count=0;
+            double sum = 0, count =0 ;
 
             int firstDay = 0, secondDay = 0 ;
 
