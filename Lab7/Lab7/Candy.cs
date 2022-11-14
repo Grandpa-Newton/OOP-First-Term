@@ -9,10 +9,17 @@ namespace Lab7
     internal class Candy
     {
         public string Name;
-        public int Cost;
+        public double Cost;
         private Producer producer;
         public string Type;
 
+        public Candy(string name, double cost, string producerName, string producerCountry, string type )
+        {
+            Name = name;
+            Cost = cost;
+            producer = new Producer(producerName, producerCountry);
+            Type = type;
+        }
         private class Producer
         {
             private string name;
@@ -24,5 +31,10 @@ namespace Lab7
                 this.country = country;
             }
         }
+
+      /*  public string GetProducerName()
+        {
+            return producer.name;
+        }*/
     }
 }
