@@ -19,7 +19,7 @@ namespace FormForLab6
         
         int firstDay=0, secondDay=0;
 
-        bool confirmButton = false;
+        //bool confirmButton = false;
 
         public Form1()
         {
@@ -100,19 +100,35 @@ namespace FormForLab6
             {
                 firstDay = Convert.ToInt32(textBox1.Text);
                 secondDay = Convert.ToInt32(textBox2.Text);
-                sum = 0;
-                for (int i = firstDay - 1; i < secondDay; i++)
+
+                if (textBox1.Text == "" || textBox2.Text == "")
+                    mainTextBox.Text = "Неверно указаны (или не указаны) дни в формах.";
+                else
                 {
-                    for (int j = 0; j < Enum.GetValues(typeof(Work)).Length; j++)
+                    firstDay = Convert.ToInt32(textBox1.Text);
+                    secondDay = Convert.ToInt32(textBox2.Text);
+
+                    if (secondDay < firstDay || secondDay > workByDays.Length + 1)
                     {
-                        sum += (int)workByDays[i].NumberOfWork[j];
+                        mainTextBox.Text = "Неверно заданы дни (либо второй день больше второго, либо он выходит за рамки количества дней).";
+                    }
+                    else
+                    {
+                        sum = 0;
+                        for (int i = firstDay - 1; i < secondDay; i++)
+                        {
+                            for (int j = 0; j < Enum.GetValues(typeof(Work)).Length; j++)
+                            {
+                                sum += (int)workByDays[i].NumberOfWork[j];
+                            }
+                        }
+
+                        mainTextBox.Text = $"Количество выполненных заказов за период ({firstDay} - {secondDay} дни) = {sum}";
                     }
                 }
 
-                mainTextBox.Text = $"Количество выполненных заказов за период ({firstDay} - {secondDay} дни) = {sum}";
-            }
 
-            
+            }
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -120,10 +136,10 @@ namespace FormForLab6
 
         }
 
-        private void button7_Click(object sender, EventArgs e)
+       /* private void button7_Click(object sender, EventArgs e)
         {
             confirmButton = true;
-        }
+        }*/
 
         private void button4_Click(object sender, EventArgs e)
         {
@@ -133,29 +149,38 @@ namespace FormForLab6
             {
                 firstDay = Convert.ToInt32(textBox1.Text);
                 secondDay = Convert.ToInt32(textBox2.Text);
-                int max = 0, index = 0;
-                for (int i = firstDay - 1; i < secondDay; i++)
+
+                if (secondDay<firstDay || secondDay>workByDays.Length+1)
                 {
-                    max += (int)workByDays[i].NumberOfWork[0];
+                    mainTextBox.Text = "Неверно заданы дни (либо второй день больше второго, либо он выходит за рамки количества дней).";
                 }
-
-                int tempMax = 0;
-
-                for (int i = 1; i < workByDays.Length; i++)
+                else
                 {
-                    tempMax = 0;
-                    for (int j = firstDay - 1; j < secondDay; j++)
+                    int max = 0, index = 0;
+                    for (int i = firstDay - 1; i < secondDay; i++)
                     {
-                        tempMax += (int)workByDays[j].NumberOfWork[i];
+                        max += (int)workByDays[i].NumberOfWork[0];
                     }
-                    if (tempMax > max)
-                    {
-                        index = i;
-                        max = tempMax;
-                    }
-                }
 
-                mainTextBox.Text="Самый востребованный вид работ - " + Enum.GetNames(typeof(Work)).GetValue(index) + " с количеством = " + max;
+                    int tempMax = 0;
+
+                    for (int i = 1; i < workByDays.Length; i++)
+                    {
+                        tempMax = 0;
+                        for (int j = firstDay - 1; j < secondDay; j++)
+                        {
+                            tempMax += (int)workByDays[j].NumberOfWork[i];
+                        }
+                        if (tempMax > max)
+                        {
+                            index = i;
+                            max = tempMax;
+                        }
+                    }
+
+                    mainTextBox.Text = "Самый востребованный вид работ - " + Enum.GetNames(typeof(Work)).GetValue(index) + " с количеством = " + max;
+                }
+                
             }
 
 

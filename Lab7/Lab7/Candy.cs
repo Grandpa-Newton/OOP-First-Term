@@ -10,31 +10,29 @@ namespace Lab7
     {
         public string Name;
         public double Cost;
-        private Producer producer;
-        public string Type;
+        public ProducerClass Producer;
+        //public string Type;
 
-        public Candy(string name, double cost, string producerName, string producerCountry, string type )
+        //public Candy(string name, double cost, string producerName, string producerCountry, string type )
+        public Candy(string name, double cost, string producerName, string producerCountry)
         {
             Name = name;
             Cost = cost;
-            producer = new Producer(producerName, producerCountry);
-            Type = type;
+            Producer = new ProducerClass(producerName, producerCountry);
+            //Type = type;
         }
-        private class Producer
+        public class ProducerClass
         {
-            private string name;
-            private string country;
+            public string Name;
+            public string Country;
 
-            public Producer(string name, string country)
+            public ProducerClass(string name, string country)
             {
-                this.name = name;
-                this.country = country;
+                this.Name = name;
+                this.Country = country;
             }
         }
 
-      /*  public string GetProducerName()
-        {
-            return producer.name;
-        }*/
+      
     }
 }
