@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab7
 {
-    internal class Caramel : Candy
+    public class Caramel : Candy
     {
         //public Caramel(string name, double cost, string producerName, string producerCountry,string type) : base(name, cost, producerName,producerCountry,type)
         public Caramel(string name, double cost, string producerName, string producerCountry) : base(name, cost, producerName, producerCountry)

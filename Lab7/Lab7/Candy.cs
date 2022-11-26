@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lab7
 {
-    internal class Candy
+    public class Candy
     {
         public string Name;
         public double Cost;
