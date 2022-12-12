@@ -8,8 +8,8 @@ namespace Lab2
 {
     public class ComplexNumber
     {
-        private double real;
-        private double imagine;
+        public double real;
+        public double imagine;
 
         public ComplexNumber(double re, double im)
         {

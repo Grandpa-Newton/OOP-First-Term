@@ -1,0 +1,8 @@
+C:\c# practise\Lab8\Lab8\bin\Debug\Lab8.exe.config
+C:\c# practise\Lab8\Lab8\bin\Debug\Lab8.exe
+C:\c# practise\Lab8\Lab8\bin\Debug\Lab8.pdb
+C:\c# practise\Lab8\Lab8\obj\Debug\Lab8.csproj.AssemblyReference.cache
+C:\c# practise\Lab8\Lab8\obj\Debug\Lab8.csproj.SuggestedBindingRedirects.cache
+C:\c# practise\Lab8\Lab8\obj\Debug\Lab8.csproj.CoreCompileInputs.cache
+C:\c# practise\Lab8\Lab8\obj\Debug\Lab8.exe
+C:\c# practise\Lab8\Lab8\obj\Debug\Lab8.pdb
